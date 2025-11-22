@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -9,11 +10,24 @@ export default function Header() {
                 </div>
 
                 <nav>
-                    <ul className='flex gap-12'>
-                        <li><a href='/' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>Home</a></li>
-                        <li><a href='/about' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>About</a></li>
-                        <li><a href='/service' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>Services</a></li>
-                        <li><a href='/contact' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>Contact</a></li>
+                    <ul className='flex items-center gap-6'>
+                        <li>
+                            <Link href='/' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='/blog' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>Blog</Link>
+                        </li>
+                        <li>
+                            <Link href='/about' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>About</Link>
+                        </li>
+                        <li>
+                            <Link href='/service' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>Services</Link>
+                        </li>
+                        <li>
+                            <Link href='/contact' className='text-lg font-medium text-black py-3 active:text-purple-700 hover:text-purple-700 transition-all delay-100'>Contact</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
